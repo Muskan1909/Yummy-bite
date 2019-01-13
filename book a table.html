@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Book a table</title>
+<style>
+body,html{
+	height : 150%;
+	margin : 0;
+}
+.bg{
+	background-image : url("bg 4.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-attachment : scroll;
+	
+}
+
+.transpbox{
+	background-color : #0C090A;
+	width : 800px;
+	height : 1000px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	margin-top : 80px;
+	margin-left : 250px;
+}
+h2{
+	margin-top : 10px;
+	text-align : center;
+}
+h1{
+	color : black;
+	position : relative;
+	top : 25px;
+	text-align : center;
+}
+.button1{
+	background-color: black;
+    border : 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 325px;
+    cursor: pointer;
+}
+p {
+	text-align : center;
+	font-size: 25px;
+	}
+.button2{
+	background-color: black;
+    border : 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    cursor: pointer;
+</style>
+</head>
+<body>
+<div class="bg">
+	<h1><i>Book A Table</i></h1>
+	<div class = "transpbox">
+	<h2><i>Please enter your details-</i></h2></br>
+	<form>
+	<h2><i>Name <pre><input type = "text" id="name1" required></pre></i></h2>
+	<h2><i>E-mail <pre><input type = "email" id="email1"></pre></i></h2>
+	<h2><i>Mobile no. <pre><input type = "text" id="mobile" required ></pre></i></h2>
+	<pre><button class="button1" onclick="myFunction1();">Send OTP</button></pre></br>
+	<p><i>Confirm its you by entering the OTP recieved on your mobile</i></p>
+	<h2><i>OTP<pre><input type = "password" id="paswd" required></pre></i></h2>
+	<h2><i>Table for<pre><select>
+	<option value="2">2</option>
+	<option value="4">4</option>
+	<option value="6">6</option>
+	<option value="10">10</option>
+	</select></pre>
+	<h2><i>Date<pre><input type="date" id="date" required></pre></i></h2>
+	<h2><i>Time<pre><input type="time"  id="time" required></pre></i></h2>
+	<button type="submit" class="button2" onclick="myFunction();">BOOK</button>
+	</form>
+	<script>
+	function myFunction1()
+	{
+		var x=document.getElementById("name1").value;
+		var y=document.getElementById("mobile").value;
+		var z=document.getElementById("paswd").value;
+		var a=document.getElementById("date").value;
+		var b=document.getElementById("time").value;
+	if((x=="")||(y==""||)||(z=="")||(a=="")||(b==""))
+	{
+		alert("All details must be filled. Please fill the details.");
+	}
+	}
+	</script>
+	</div>
+</div>
+</body>
+</html>

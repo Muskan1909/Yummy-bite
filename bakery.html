@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>Bakery</title>
+<style>
+body,html{
+	height : 150%;
+	margin : 0;
+}
+.bg{
+	background-image : url("bake2.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-attachment : scroll;
+	
+}
+
+.transpbox{
+	background-color : #0C090A;
+	width : 800px;
+	height : 1300px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	top : 100px;
+	left : 400px;
+}
+h2{
+	margin-top : 10px;
+	
+}
+h1{
+	color : white;
+	position : relative;
+	top : 25px;
+	text-align : center;
+}
+.button{
+	background-color: black;
+    border : 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 50px;
+    cursor: pointer;
+}
+.transpbox1{
+	background-color : #0C090A;
+	width : 250px;
+	height : 420px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	margin-top : 45px;
+	margin-left: 50px;
+}
+#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11{
+	display : inline;
+	
+}
+
+</style>
+</head>
+<body>
+<script>
+function function1()
+{
+
+var bs = document.getElementById("id3").value;
+var r = document.getElementById("id4").value;
+ 	
+	if(bs=="Nik Baker's")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p2").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p3").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Oven Fresh")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p4").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p5").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Cafe Coffee Day")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p6").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p7").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Vinnie's- The Artisan Bakers")
+	{
+		if(r>=1&&r<=5)
+		{
+		document.getElementById("p8").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p9").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Super Donuts")
+	{
+			if(r>=1&&r<=5)
+		{
+		document.getElementById("p10").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p11").innerHTML = document.getElementById("id5").value;
+	}
+	
+	
+}
+function function2()
+{
+window.open("book a table.html");
+}
+function function3()
+{
+window.open("nik menu pdf.pdf");
+}
+function function4()
+{
+window.open("oven fresh menu main.pdf");
+}
+function function5()
+{
+window.open("ccd menu main.pdf");
+}
+</script>
+<div class="bg">
+	<h1><i>Bakery</i></h1>
+	<div class="transpbox1">
+		<h3 style="text-align:center">Rating and Review Form</h3>
+		Name:&nbsp;<input type="text" id="id1" style="float:right;"><br><br>
+		Email:&nbsp;<input type="text" id="id2" style="float:right;"><br><br>
+		Bakery&nbsp;
+		<select id="id3" style="float:right;">
+			<option value = "Nik Baker's">Nik Baker's</option>
+			<option value = "Oven Fresh">Oven Fresh</option>
+			<option value = "Cafe Coffee Day">Cafe Coffee Day</option>
+			<option value = "Vinnie's-The Artisan Bakers">Vinnie's-The Artisan Bakers</option>
+			<option value = "Super Donuts">Super Donuts</option>
+		</select><br><br>
+		Rating:<input type="number" id="id4"  style="float:right;"><br><br>
+		Review:<br>
+		<textarea rows="8" cols="30" placeholder="Express your views regarding the place and food offered" id="id5"></textarea><br><br>
+		<button class="button" onclick="function1()">Post a review</button>
+	</div>
+	<div class = "transpbox">
+	<h2>Nik Baker's
+	<img src = "nik.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - S.C.O 441-442, Himalaya Marg, Near SBI, Sector 35C, Chandigarh, 160022</p>
+	<p>Hours : Monday - Sunday 9AM - 12AM</p>
+	<p>Contact :  0172 506 2250</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button" onclick="function3()">Download menu</button></a><br><br>
+	Rating&nbsp;-&nbsp;<p id="p2"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p3"><i></i></p>
+	<hr>
+	<h2>Oven Fresh
+	<img src = "ovenfresh.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 35, Sector 26-C, Madhya Marg, Chandigarh 160019</p>
+	<p>Hours : Monday - Sunday 11AM - 11PM</p>
+	<p>Contact :   0172 465 8862</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button" onclick="function4()">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p4"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p5"><i></i></p>
+	<hr>
+	<h2>Café Coffee Day
+	<img src = "ccd.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Sco No. 469-470, Sector 35C, Chandigarh, 160022</p>
+	<p>Hours : Monday - Sunday 11AM - 1AM</p>
+	<p>Contact :   1800 102 5093</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button" onclick = "function5()">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p6"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p7"><i></i></p>
+	<hr>
+	<h2>Vinnie's - The Artisan Bakers
+	<img src = "vinni.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - S.C.O 17 , Sector 34-C, 34 market Rd Near gurdwara sahib, Chandigarh, 160022</p>
+	<p>Hours : Monday - Sunday 10:30AM - 9:30PM</p>
+	<p>Contact :   098152 43304</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p8"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p9"><i></i></p>
+	<hr>
+	<h2>Super Donuts
+	<img src = "sd.jpeg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 446, Sector 35C, Chandigarh, 160022</p>
+	<p>Hours : Monday - Sunday 10AM - 12AM</p>
+	<p>Contact :   0172 500 0559</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p10"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p11"><i></i></p>
+	<hr>
+	</div>
+</div>
+</body>
+</html>

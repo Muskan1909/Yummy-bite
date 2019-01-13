@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>pizza</title>
+<style>
+body,html{
+	height : 150%;
+	margin : 0;
+}
+.bg{
+	background-image : url("pizza2.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-attachment : scroll;
+	
+}
+
+.transpbox{
+	background-color : #0C090A;
+	width : 800px;
+	height : 1300px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	top : 100px;
+	left : 400px;
+}
+h2{
+	margin-top : 10px;
+}
+h1{
+	color : white;
+	position : relative;
+	top : 25px;
+	text-align : center;
+}
+.button{
+	background-color: black;
+    border : 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 50px;
+    cursor: pointer;
+}
+.transpbox1{
+	background-color : #0C090A;
+	width : 250px;
+	height : 420px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	margin-top : 45px;
+	margin-left: 50px;
+}
+#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11{
+	display : inline;
+}
+</style>
+</head>
+<body>
+<script>
+function function1()
+{
+var r;
+var bs = document.getElementById("id3").value;
+var r = document.getElementById("id4").value;
+ 	
+	if(bs=="Pizza Hut")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p2").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p3").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Domino's Pizza")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p4").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p5").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Whistling Duck")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p6").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p7").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Sam's Pizza")
+	{
+		if(r>=1&&r<=5)
+		{
+		document.getElementById("p8").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p9").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="La Pino'z Pizza")
+	{
+			if(r>=1&&r<=5)
+		{
+		document.getElementById("p10").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p11").innerHTML = document.getElementById("id5").value;
+	}
+	
+	
+	
+}
+function function2()
+{
+window.open("book a table.html");
+}
+function function3()
+{
+window.open("pizza hut.pdf");
+}
+</script>
+<div class="bg">
+	<h1><i>Pizza</i></h1>
+	<div class="transpbox1">
+		<h3 style="text-align:center">Rating and Review Form</h3>
+		Name:&nbsp;<input type="text" id="id1" style="float:right;"><br><br>
+		Email:&nbsp;<input type="text" id="id2" style="float:right;"><br><br>
+		Pizza:
+		<select style="float:right;" id="id3">
+		<option value="Pizza Hut">Pizza Hut</option>
+		<option value="Domino's Pizza">Domino's Pizza</option>
+		<option value="Whistling Duck">Whistling Duck</option>
+		<option value="Sam's Pizza">Sam's Pizza </option>
+		<option value="La Pino'z Pizza">La Pino'z Pizza</option>
+		</select>
+		<br><br>
+		Rating:<input type="number" id="id4" min="1" max="5" style="float:right;"><br><br>
+		Review:<br>
+		<textarea rows="8" cols="30" placeholder="Express your views regarding the place and food offered" id="id5"></textarea><br><br>
+		<button class="button" onclick="function1()">Post a review</button>
+	</div>
+	<div class = "transpbox">
+	<h2>Pizza Hut
+	<img src = "hut.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 345, Sector 35B, Chandigarh,160035</p>
+	<p>Hours : Monday - Sunday  11AM - 11PM</p>
+	<p>Contact : 0172 398 8398</p>
+	<button class="button" onclick="function2()">Book a table</button>
+	<button class="button" onclick = "function3()">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p2"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p3"><i></i></p>
+	<hr>
+	<h2>Domino's Pizza
+	<img src = "domi.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO - 499-500, Himalaya Marg, Sector 35 C, Chandigarh, 160035</p>
+	<p> Hours Monday - Sunday : 11AM -11PM</p>
+	<p>Contact :0172 499 0666</p>
+    <button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p4"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p5"><i></i></p>
+	<hr>
+	<h2>Whistling Duck
+	<img src = "duck.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 10,Back Lane,Sector 26,Chandigarh,160019</p>
+	<p> Hours  : Monday - Sunday 12PM -11:45PM</p>
+	<p>Contact : 090236 91893</p>
+    <button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p6"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p7"><i></i></p>
+	<hr>
+	<h2>Sam's Pizza
+	<img src = "sam.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Basement Madhya Marg, Sector 26, Opposite Sri Aurobindo School, Chandigarh 160019</p>
+	<p> Hours  : Monday - Sunday 11AM -11PM</p>
+	<p>Contact : 0172 465 3355</p>
+    <button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p8"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p9"><i></i></p>
+	<hr>
+	<h2>La Pino'z Pizza
+	<img src   = "pinos.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Booth No. 10, Sector 9-D, Inner Market, Chandigarh, 160009</p>
+	<p> Hours : Monday - Sunday 11AM -11:45PM</p>
+	<p>Contact : 0172 401 3030</p>
+    <button class = "button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p10"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p11"><i></i></p>
+	<hr>
+	</div>
+</div>
+</body>
+</html>

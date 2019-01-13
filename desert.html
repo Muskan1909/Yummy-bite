@@ -1,0 +1,226 @@
+<html>
+<head>
+<title>Desert</title>
+<style>
+body,html{
+	height : 150%;
+	margin : 0;
+}
+.bg{
+	background-image : url("des9.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-attachment : scroll;
+	
+}
+
+.transpbox{
+	background-color : #0C090A;
+	width : 800px;
+	height : 1300px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	top : 100px;
+	left : 400px;
+	
+}
+h2{
+	margin-top : 10px;
+}
+h1{
+	color : black;
+	position : relative;
+	top : 25px;
+	text-align : center;
+}
+.button{
+	background-color: black;
+    border : 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 50px;
+    cursor: pointer;
+}
+.transpbox1{
+	background-color : #0C090A;
+	width : 250px;
+	height : 420px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	margin-top : 45px;
+	margin-left: 50px;
+}
+#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11{
+	display : inline;
+	
+}
+
+</style>
+</head>
+<body>
+<script>
+function function1()
+{
+var r;
+var bs = document.getElementById("id3").value;
+var r = document.getElementById("id4").value;
+ 	
+	if(bs=="Baskin Robbins")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p2").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p3").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Monica's")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p4").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p5").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Softy Corner")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p6").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p7").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Sindhi Sweets")
+	{
+		if(r>=1&&r<=5)
+		{
+		document.getElementById("p8").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p9").innerHTML = document.getElementById("id5").value;
+	}
+	else if(bs=="Gopal's")
+	{
+			if(r>=1&&r<=5)
+		{
+		document.getElementById("p10").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p11").innerHTML = document.getElementById("id5").value;
+	}
+	
+}
+function function2()
+{
+window.open("book a table.html");
+}
+function function3()
+{
+window.open("baskin robbin menu.pdf");
+}
+</script>
+
+<div class="bg">
+	<h1><i>Desert</i></h1>
+	<div class="transpbox1">
+		<h3 style="text-align:center">Rating and Review Form</h3>
+		Name:&nbsp;<input type="text" id="id1" style="float:right;"><br><br>
+		Email:&nbsp;<input type="text" id="id2" style="float:right;"><br><br>
+		Shop:&nbsp;
+		<select id="id3" style="float:right;">
+			<option value = "Baskin Robbins">Baskin Robbins</option>
+			<option value = "Monica's">Monica's</option>
+			<option value = "Softy Corner">Softy Corner</option>
+			<option value = "Sindhi Sweets">Sindhi Sweets</option>
+			<option value = "Gopal's">Gopal's</option>
+		</select><br><br>
+		Rating:<input type="number" id="id4" min="1" max="5" style="float:right;"><br><br>
+		Review:<br>
+		<textarea rows="8" cols="30" placeholder="Express your views regarding the place and food offered" id="id5"></textarea><br><br>
+		<button class="button" onclick="function1()">Post a review</button>
+	</div>
+	<div class = "transpbox">
+	<h2>Baskin Robbins
+	<img src = "br.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Booth No. 19, 22, Sector 8B, Sector 8, Chandigarh, 160018</p>
+	<p>Hours : Monday - Sunday 11AM - 11PM</p>
+	<p>Contact :  098962 51132</p>
+	<button class="button" onclick="function2()">Book a table</button>
+	<button class="button" onclick="function3()">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p2"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p3"><i></i></p>
+	<hr>
+	<h2>Monica’s
+	<img src = "monica.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Booth-20&21, 35 Market Road, 8B Sector, Chandigarh, 160022</p>
+	<p>Hours : Monday - Sunday 9:30AM - 10:30PM</p>
+	<p>Contact :    0172 501 8076</p>
+	<button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p4"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p5"><i></i></p>
+	<hr>
+	<h2>Softy Corner
+	<img src = "sc.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Near Plaza Fountain, S.C.O. 87-88, Sector 17D, Chandigarh, 160017</p>
+	<p>Hours : Monday - Saturday 10:30AM - 9:30PM</br>
+	           Sunday 3:30AM - 9:30PM</p>
+	<p>Contact :   0172 270 2750</p>
+	<button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p6"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p7"><i></i></p>
+	<hr>
+	<h2>Sindhi Sweets
+	<img src = "sind.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 108-109, Near Bajaj Travels, Shopping Plaza, Bridge Market 17C, Sector 17, Chandigarh, 160017</p>
+	<p>Hours : Monday - Sunday 10AM - 10PM</p>
+	<p>Contact :   0172 507 5222</p>
+	<button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p8"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p9"><i></i></p>
+	<hr>
+	<h2>Gopal's
+	<img src = "gopal.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address -  SCO 20-21, Sector 8C, Madhya Marg, Chandigarh, 160009</p>
+	<p>Hours : Monday - Sunday 8AM - 11PM</p>
+	<p>Contact :    0172 507 2794</p>
+	<button class="button" onclick="function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p10"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p11"><i></i></p>
+	<hr>
+	</div>
+</div>
+</body>
+</html>

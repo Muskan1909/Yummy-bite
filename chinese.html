@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>Chinese</title>
+<style>
+body,html{
+	height : 150%;
+	margin : 0;
+}
+.bg{
+	background-image : url("chini3.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat : no-repeat;
+	background-size: cover;
+	background-attachment : scroll;
+	
+}
+
+.transpbox{
+	background-color : #0C090A;
+	width : 800px;
+	height : 1300px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	top : 100px;
+	left : 400px;
+}
+h2{
+	margin-top : 10px;
+}
+h1{
+	color : white;
+	position : relative;
+	top : 25px;
+	text-align : center;
+}
+.button{
+	background-color: black;
+    border : 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 50px;
+    cursor: pointer;
+}
+.transpbox1{
+	background-color : #0C090A;
+	width : 250px;
+	height : 420px;
+	padding : 15Px;
+	opacity : 0.9;
+	filter : alpha(opacity=90);
+	color : white;
+	position : absolute;
+	margin-top : 45px;
+	margin-left: 50px;
+}
+#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11{
+	display : inline;
+	
+}
+
+
+</style>
+</head>
+<body>
+<script>
+function function1()
+{
+
+var cr = document.getElementById("id3").value;
+var r = document.getElementById("id4").value;
+ 	
+	if(cr=="Mainland China")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p2").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p3").innerHTML = document.getElementById("id5").value;
+	}
+	else if(cr=="Yo!China")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p4").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p5").innerHTML = document.getElementById("id5").value;
+	}
+	else if(cr=="Shangri-La Plus")
+	{
+		if(r>=1&&r<=5)
+		{
+			document.getElementById("p6").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p7").innerHTML = document.getElementById("id5").value;
+	}
+	else if(cr=="Cafe Jade Delicious Chinese")
+	{
+		if(r>=1&&r<=5)
+		{
+		document.getElementById("p8").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p9").innerHTML = document.getElementById("id5").value;
+	}
+	else if(cr=="PunChin")
+	{
+			if(r>=1&&r<=5)
+		{
+		document.getElementById("p10").innerHTML = document.getElementById("id4").value;
+		}
+		else
+		{
+			alert("Rating should be in between 1 and 5");
+		}
+	document.getElementById("p11").innerHTML = document.getElementById("id5").value;
+	}
+	
+	
+	
+}
+function function2()
+{
+window.open("book a table.html");
+}
+function function3()
+{
+window.open("mainland china menu.pdf");
+}
+
+</script>
+<div class="bg">
+	<h1><i>Chinese</i></h1>
+	<div class="transpbox1">
+	<h3 style="text-align:center">Rating and Review Form</h3>
+		Name:&nbsp;<input type="text" id="id1" style="float:right;"><br><br>
+		Email:&nbsp;<input type="text" id="id2" style="float:right;"><br><br>
+		Restaurant:&nbsp;
+		<select id="id3" style="float:right;">
+			<option value = "Mainland China">Mainland China</option>
+			<option value = "Yo!China">Yo!China</option>
+			<option value = "Shangri-La Plus">Shangri-La Plus</option>
+			<option value = "Cafe Jade Delicious Chinese">Cafe Jade Delicious Chinese</option>
+			<option value = "PunChin">PunChin</option>
+		</select><br><br>
+		Rating:<input type="number" id="id4"  style="float:right;"><br><br>
+		Review:<br>
+		<textarea rows="8" cols="30" placeholder="Express your views regarding the place and food offered" id="id5"></textarea><br><br>
+		<button class="button" onclick="function1()">Post a review</button>
+	</div>
+	<div class = "transpbox">
+	<h2>Mainland China
+	<img src = "mc.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 40, Madhya Marg, Sector 26, Chandigarh, 160019</p>
+	<p>Hours : Monday - Sunday 10AM - 11PM</p>
+	<p>Contact :  0172 500 0005</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button" onclick = "function3()">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p2"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p3"><i></i></p>
+	<hr>
+	<h2>Yo!China
+	<img src = "yo.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO 4 & 5, Madhya Marg, Near HSBC Bank, Sector 9D, Chandigarh, 160009</p>
+	<p>Hours : Monday - Sunday 11AM - 11PM</p>
+	<p>Contact :   0172 461 5522</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p4"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p5"><i></i></p>
+	<hr>
+	<h2>Shangri-La Plus
+	<img src = "la.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCO-324, Near Maya Hotel, Sector 35B, Chandigarh, 160035</p>
+	<p>Hours : Monday - Sunday 12PM - 11PM</p>
+	<p>Contact :   0172 266 4386</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p6"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p7"><i></i></p>
+	<hr>
+	<h2>Cafe Jade Delicious Chinese
+	<img src = "jade.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - Booth Number 254, Sector 38-D, Sector 38, Chandigarh, 160038</p>
+	<p>Hours : Monday - Sunday 11AM - 11PM</p>
+	<p>Contact :   0172 434 5100</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p8"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p9"><i></i></p>
+	<hr>
+	<h2>PunChin
+	<img src = "punchin.jpg" width="200px" height = "170px" align = "right"></h2>
+	<p>Address - SCF - 13-18, Sector- 53, Phase-3A, Sahibzada Ajit Singh Nagar, Mohali 160055</p>
+	<p>Hours : Monday - Sunday 11AM - 11:30PM</p>
+	<p>Contact :   0172 663 9333</p>
+	<button class="button" onclick = "function2()">Book a table</button>
+	<button class="button">Download menu</button><br><br>
+	Rating&nbsp;-&nbsp;<p id="p10"></p>&emsp;
+	Review&nbsp;-&nbsp;<p id="p11"><i></i></p>
+	<hr>
+	</div>
+</div>
+</body>
+</html>
